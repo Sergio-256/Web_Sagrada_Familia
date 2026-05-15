@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Llibret — Falla Sagrada Família</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+
+<nav class="navbar" role="navigation">
+  <div class="container">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-icon" aria-hidden="true"></div>
+      <div>
+        <div class="brand-name">Sagrada Família</div>
+        <div class="brand-sub">Comissió Fallera · València</div>
+      </div>
+    </a>
+    <ul class="nav-menu" role="list">
+      <li><a href="index.html#la-falla">La Falla</a></li>
+      <li><a href="index.html#historia">Història</a></li>
+      <li><a href="index.html#exercici" class="active">Exercici</a></li>
+      <li><a href="noticies.html">Notícies</a></li>
+      <li><a href="calendari.html">Calendari</a></li>
+      <li><a href="galeria.html">Multimèdia</a></li>
+      <li><a href="arxiu.html">Arxiu</a></li>
+      <li><a href="index.html#contacte" class="btn btn-outline" style="padding:0.4rem 1rem;font-size:0.75rem;">Contacte</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Obrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inici</a> <span>›</span> <a href="index.html#exercici">Exercici</a> <span>›</span> <span>Llibret</span></nav>
+    <h1 class="page-title">Llibret [AAAA]</h1>
+    <p class="page-subtitle">Publicació oficial de la Falla Sagrada Família</p>
+  </div>
+</div>
+
+<main>
+  <section>
+    <div class="container">
+      <div style="display:grid; grid-template-columns:300px 1fr; gap:3rem; align-items:start;">
+
+        <!-- Portada del llibret -->
+        <div class="reveal">
+          <div style="aspect-ratio:3/4; background:linear-gradient(160deg,var(--cendra),var(--fum)); border:1px solid rgba(245,183,0,0.2); border-radius:4px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:1rem; color:rgba(245,183,0,0.25); margin-bottom:1.25rem;">
+            <span style="font-size:3rem;">📖</span>
+            <span style="font-family:var(--font-display); font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase;">Portada Llibret [AAAA]</span>
+            <!-- INSERIR: <img src="../img/portada-llibret-[AAAA].jpg" alt="Portada Llibret [AAAA]"> -->
+          </div>
+          <!-- Botó descàrrega -->
+          <a href="#" class="btn btn-primary" style="width:100%; justify-content:center;">
+            <!-- INSERIR: href="../docs/llibret-[AAAA].pdf" -->
+            📥 Descarregar PDF
+          </a>
+        </div>
+
+        <!-- Contingut del llibret -->
+        <div class="reveal" data-delay="100">
+          <span class="section-label">Exercici [AAAA]–[AAAA+1]</span>
+          <h2 style="font-size:2rem; color:var(--crema); margin-bottom:1.5rem;">Contingut del Llibret</h2>
+
+          <!-- INSERIR: Índex o contingut del llibret -->
+          <div style="display:flex; flex-direction:column; gap:1rem;">
+
+            <div style="padding:1.25rem; background:rgba(249,240,220,0.03); border:1px solid rgba(245,183,0,0.1); border-radius:3px;">
+              <h3 style="font-size:1rem; color:var(--or-clar); margin-bottom:0.35rem;">[Títol de la secció 1]</h3>
+              <p style="font-size:0.9rem; color:rgba(249,240,220,0.55);">[Breu descripció del contingut d'aquesta secció del llibret]</p>
+            </div>
+
+            <div style="padding:1.25rem; background:rgba(249,240,220,0.03); border:1px solid rgba(245,183,0,0.1); border-radius:3px;">
+              <h3 style="font-size:1rem; color:var(--or-clar); margin-bottom:0.35rem;">[Títol de la secció 2]</h3>
+              <p style="font-size:0.9rem; color:rgba(249,240,220,0.55);">[Descripció]</p>
+            </div>
+
+            <div style="padding:1.25rem; background:rgba(249,240,220,0.03); border:1px solid rgba(245,183,0,0.1); border-radius:3px;">
+              <h3 style="font-size:1rem; color:var(--or-clar); margin-bottom:0.35rem;">Falleres Majors i Cort d'Honor</h3>
+              <p style="font-size:0.9rem; color:rgba(249,240,220,0.55);">Presentació oficial de les representants de l'exercici.</p>
+            </div>
+
+            <div style="padding:1.25rem; background:rgba(249,240,220,0.03); border:1px solid rgba(245,183,0,0.1); border-radius:3px;">
+              <h3 style="font-size:1rem; color:var(--or-clar); margin-bottom:0.35rem;">Esbossos de la Falla</h3>
+              <p style="font-size:0.9rem; color:rgba(249,240,220,0.55);">Presentació de l'artista faller i els esbossos de la falla gran i infantil.</p>
+            </div>
+
+          </div>
+
+          <!-- Edicions anteriors -->
+          <div style="margin-top:2.5rem;">
+            <h3 style="font-size:1.1rem; margin-bottom:1rem; color:var(--crema);">Edicions Anteriors</h3>
+            <div style="display:flex; gap:0.75rem; flex-wrap:wrap;">
+              <!--  Afegir un botó per cada any d'arxiu disponible -->
+              <a href="arxiu.html" class="btn btn-ghost" style="font-size:0.78rem; padding:0.5rem 1.1rem;">[AAAA]</a>
+              <a href="arxiu.html" class="btn btn-ghost" style="font-size:0.78rem; padding:0.5rem 1.1rem;">[AAAA-1]</a>
+              <a href="arxiu.html" class="btn btn-ghost" style="font-size:0.78rem; padding:0.5rem 1.1rem;">[AAAA-2]</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Falla Sagrada Família · Tots els drets reservats</p>
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.78rem; padding:0.5rem 1rem;">← Tornar a l'inici</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="main.js"></script>
+</body>
+</html>

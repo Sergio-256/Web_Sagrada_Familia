@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrevistes — Falla Sagrada Família</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="pages.css" />
+</head>
+<body>
+
+<nav class="navbar" role="navigation">
+  <div class="container">
+    <a href="index.html" class="nav-brand">
+      <div class="brand-icon" aria-hidden="true"></div>
+      <div>
+        <div class="brand-name">Sagrada Família</div>
+        <div class="brand-sub">Comissió Fallera · València</div>
+      </div>
+    </a>
+    <ul class="nav-menu" role="list">
+      <li><a href="index.html#la-falla">La Falla</a></li>
+      <li><a href="index.html#historia">Història</a></li>
+      <li><a href="index.html#exercici" class="active">Exercici</a></li>
+      <li><a href="noticies.html">Notícies</a></li>
+      <li><a href="calendari.html">Calendari</a></li>
+      <li><a href="galeria.html">Multimèdia</a></li>
+      <li><a href="arxiu.html">Arxiu</a></li>
+      <li><a href="index.html#contacte" class="btn btn-outline" style="padding:0.4rem 1rem;font-size:0.75rem;">Contacte</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Obrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb"><a href="index.html">Inici</a> <span>›</span> <a href="index.html#exercici">Exercici</a> <span>›</span> <span>Entrevistes</span></nav>
+    <h1 class="page-title">Entrevistes</h1>
+    <p class="page-subtitle">Parlem amb els protagonistes de la nostra falla</p>
+  </div>
+</div>
+
+<main>
+  <section>
+    <div class="container">
+
+      <!-- INSERIR: Repetir per a cada entrevista -->
+      <div style="display:flex; flex-direction:column; gap:3rem;">
+
+        <article class="reveal exercici-card" style="display:grid; grid-template-columns:auto 1fr; gap:2rem; align-items:start;">
+          <!-- Foto entrevistat -->
+          <div style="width:120px; height:120px; border-radius:3px; background:linear-gradient(160deg,var(--cendra),var(--fum)); border:2px solid rgba(245,183,0,0.2); flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:2.5rem; color:rgba(245,183,0,0.2);">👤</div>
+          <!-- INSERIR: <img src="../img/entrevistes/[persona].jpg" alt="[Nom]" style="width:120px;height:120px;border-radius:3px;object-fit:cover;"> -->
+          <div>
+            <div class="card-label">🎙️ Entrevista</div>
+            <h2 class="card-title">[Nom de la persona entrevistada]</h2>
+            <p style="font-family:var(--font-display); font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(249,240,220,0.4); margin-bottom:1.25rem;">[Càrrec / Rol a la falla]</p>
+            <!-- INSERIR: Text de l'entrevista en format pregunta/resposta -->
+            <div style="display:flex; flex-direction:column; gap:1.25rem;">
+              <div>
+                <p style="color:var(--or); font-style:italic; margin-bottom:0.35rem;">"[Pregunta]"</p>
+                <p style="color:rgba(249,240,220,0.65);">[Resposta de l'entrevistat/da]</p>
+              </div>
+              <div>
+                <p style="color:var(--or); font-style:italic; margin-bottom:0.35rem;">"[Pregunta]"</p>
+                <p style="color:rgba(249,240,220,0.65);">[Resposta]</p>
+              </div>
+              <div>
+                <p style="color:var(--or); font-style:italic; margin-bottom:0.35rem;">"[Pregunta]"</p>
+                <p style="color:rgba(249,240,220,0.65);">[Resposta]</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <div class="section-divider"></div>
+
+        <article class="reveal exercici-card" style="display:grid; grid-template-columns:auto 1fr; gap:2rem; align-items:start;">
+          <div style="width:120px; height:120px; border-radius:3px; background:linear-gradient(160deg,var(--cendra),var(--fum)); border:2px solid rgba(245,183,0,0.2); flex-shrink:0; display:flex; align-items:center; justify-content:center; font-size:2.5rem; color:rgba(245,183,0,0.2);">👤</div>
+          <div>
+            <div class="card-label">🎙️ Entrevista</div>
+            <h2 class="card-title">[Nom de la persona entrevistada]</h2>
+            <p style="font-family:var(--font-display); font-size:0.72rem; letter-spacing:0.12em; text-transform:uppercase; color:rgba(249,240,220,0.4); margin-bottom:1.25rem;">[Càrrec / Rol]</p>
+            <div style="display:flex; flex-direction:column; gap:1.25rem;">
+              <div>
+                <p style="color:var(--or); font-style:italic; margin-bottom:0.35rem;">"[Pregunta]"</p>
+                <p style="color:rgba(249,240,220,0.65);">[Resposta]</p>
+              </div>
+              <div>
+                <p style="color:var(--or); font-style:italic; margin-bottom:0.35rem;">"[Pregunta]"</p>
+                <p style="color:rgba(249,240,220,0.65);">[Resposta]</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <p>© <span id="year"></span> Falla Sagrada Família · Tots els drets reservats</p>
+      <a href="index.html" class="btn btn-ghost" style="font-size:0.78rem; padding:0.5rem 1rem;">← Tornar a l'inici</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="main.js"></script>
+</body>
+</html>

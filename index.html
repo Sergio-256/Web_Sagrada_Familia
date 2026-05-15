@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Web oficial de la Falla Sagrada Família. Notícies, calendari, galeria, arxiu i tot sobre la nostra comissió." />
+  <title>Falla Sagrada Família</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Favicon inline SVG -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><polygon points='16,2 30,12 25,30 7,30 2,12' fill='%23D4380D'/><polygon points='16,7 26,14 22,27 10,27 6,14' fill='%23F5B700'/></svg>" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVEGACIÓ
+     ============================================================ -->
+<nav class="navbar" role="navigation" aria-label="Navegació principal">
+  <div class="container">
+    <a href="#inici" class="nav-brand" aria-label="Falla Sagrada Família — Inici">
+      <div class="brand-icon" aria-hidden="true"></div>
+      <div>
+        <div class="brand-name">Sagrada Família</div>
+        <div class="brand-sub">Comissió Fallera · València</div>
+      </div>
+    </a>
+
+    <ul class="nav-menu" role="list">
+      <li><a href="#la-falla">La Falla</a></li>
+      <li><a href="#historia">Història</a></li>
+      <li><a href="#exercici">Exercici</a></li>
+      <li><a href="#novetats">Notícies</a></li>
+      <li><a href="#calendari">Calendari</a></li>
+      <li><a href="#galeria">Multimèdia</a></li>
+      <li><a href="#arxiu">Arxiu</a></li>
+      <li><a href="#cultura">Cultura</a></li>
+      <li><a href="#contacte" class="btn btn-outline" style="padding:0.4rem 1rem;font-size:0.75rem;">Contacte</a></li>
+    </ul>
+
+    <button class="nav-toggle" aria-label="Obrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+
+<!-- ============================================================
+     1. INICI / HERO
+     ============================================================ -->
+<section id="inici" class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true"></div>
+
+  <div class="container hero-content">
+    <p class="hero-eyebrow">Comissió Fallera Oficial</p>
+    <h1 class="hero-title" id="hero-title">
+      <span class="line-or">Sagrada</span>
+      <span class="line-foc">Família</span>
+    </h1>
+    <p class="hero-subtitle">Festes de les Falles · València</p>
+    <div class="hero-actions">
+      <a href="#exercici" class="btn btn-primary">
+        <span>&#128293;</span> Exercici Actual
+      </a>
+      <a href="llibret.html" class="btn btn-outline">Descarregar Llibret</a>
+      <a href="#galeria" class="btn btn-ghost">Galeria de fotos</a>
+    </div>
+  </div>
+
+  <!-- Últimes notícies / pròxim event quick bar -->
+  <nav class="hero-quicklinks" aria-label="Accés ràpid">
+    <div class="container">
+      <a href="llibret.html">
+        <span class="ql-icon">📖</span> Llibret
+      </a>
+      <a href="#galeria">
+        <span class="ql-icon">📸</span> Galeria
+      </a>
+      <a href="#calendari">
+        <span class="ql-icon">📅</span> Calendari
+      </a>
+      <a href="#arxiu">
+        <span class="ql-icon">🗂️</span> Arxiu
+      </a>
+      <a href="#contacte">
+        <span class="ql-icon">✉️</span> Fer-se faller/a
+      </a>
+    </div>
+  </nav>
+
+  <div class="hero-scroll" aria-hidden="true">Desplaça</div>
+</section>
+
+
+<!-- ============================================================
+     2. LA FALLA — QUI SOM
+     ============================================================ -->
+<section id="la-falla" aria-labelledby="lafalla-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">La nostra comissió</span>
+      <h2 class="section-title" id="lafalla-title">Qui som</h2>
+      <p class="section-desc">
+        <!-- INSERIR: Breu presentació de la comissió fallera, barri, any de fundació i valors. -->
+        [Breu descripció de la comissió. Exemple: "La Falla Sagrada Família naix l'any XXXX al barri de… amb la voluntat de…"]
+      </p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; align-items:start;">
+      <!-- Bloc text -->
+      <div class="reveal" data-delay="0">
+        <p style="color:rgba(249,240,220,0.65); margin-bottom:1.25rem;">
+          <!-- INSERIR: Informació general de la comissió (adreça del casal, any de fundació, districte, etc.) -->
+          [Informació general: adreça del casal, any de fundació, districte, Junta Local Fallera a la qual pertany, etc.]
+        </p>
+        <ul style="display:flex; flex-direction:column; gap:0.75rem;">
+          <li style="display:flex; gap:1rem; align-items:center;">
+            <span style="color:var(--or); font-size:1.1rem;">🏠</span>
+            <span style="color:rgba(249,240,220,0.6); font-size:0.95rem;">Casal: <strong style="color:var(--crema);">[Adreça del casal]</strong></span>
+          </li>
+          <li style="display:flex; gap:1rem; align-items:center;">
+            <span style="color:var(--or); font-size:1.1rem;">📅</span>
+            <span style="color:rgba(249,240,220,0.6); font-size:0.95rem;">Fundació: <strong style="color:var(--crema);">[Any]</strong></span>
+          </li>
+          <li style="display:flex; gap:1rem; align-items:center;">
+            <span style="color:var(--or); font-size:1.1rem;">👥</span>
+            <span style="color:rgba(249,240,220,0.6); font-size:0.95rem;">Fallers/es: <strong style="color:var(--crema);">[Número de membres]</strong></span>
+          </li>
+          <li style="display:flex; gap:1rem; align-items:center;">
+            <span style="color:var(--or); font-size:1.1rem;">🏆</span>
+            <span style="color:rgba(249,240,220,0.6); font-size:0.95rem;">Secció: <strong style="color:var(--crema);">[Secció actual]</strong></span>
+          </li>
+        </ul>
+        <div style="margin-top:2rem;">
+          <a href="comissio.html" class="btn btn-outline">Conèixer la comissió</a>
+        </div>
+      </div>
+
+      <!-- Imatge destacada placeholder -->
+      <div class="reveal" data-delay="150" style="aspect-ratio:4/3; background:linear-gradient(160deg,var(--cendra),var(--fum)); border:1px solid rgba(245,183,0,0.15); border-radius:4px; display:flex; align-items:center; justify-content:center; flex-direction:column; gap:1rem; color:rgba(245,183,0,0.2);">
+        <span style="font-size:3rem;">🔥</span>
+        <span style="font-family:var(--font-display); font-size:0.75rem; letter-spacing:0.15em; text-transform:uppercase;">[Imatge destacada de la falla]</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ============================================================
+     3. HISTÒRIA
+     ============================================================ -->
+<section id="historia" style="background:var(--fum);" aria-labelledby="historia-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Els nostres orígens</span>
+      <h2 class="section-title" id="historia-title">Història de la Falla</h2>
+    </div>
+
+    <!-- Timeline -->
+    <div style="position:relative; padding-left:2rem;">
+      <!-- Vertical line -->
+      <div style="position:absolute; left:0; top:0; bottom:0; width:2px; background:linear-gradient(to bottom, var(--or), rgba(245,183,0,0.1));"></div>
+
+      <!-- INSERIR: Repetir aquest bloc per cada fita histórica -->
+      <div class="reveal" style="margin-bottom:3rem; position:relative;">
+        <div style="position:absolute; left:-2.4rem; top:0.2rem; width:12px; height:12px; border-radius:50%; background:var(--or); border:2px solid var(--nit); box-shadow:0 0 8px rgba(245,183,0,0.5);"></div>
+        <span class="section-label">[Any]</span>
+        <h3 style="font-size:1.25rem; color:var(--or-clar); margin-bottom:0.5rem;">[Títol de la fita]</h3>
+        <p style="color:rgba(249,240,220,0.6);">[Descripció del moment históric. Exemple: any de fundació, primer premi obtingut, canvi de seu del casal, etc.]</p>
+      </div>
+
+      <div class="reveal" style="margin-bottom:3rem; position:relative;">
+        <div style="position:absolute; left:-2.4rem; top:0.2rem; width:12px; height:12px; border-radius:50%; background:var(--brasa); border:2px solid var(--nit);"></div>
+        <span class="section-label">[Any]</span>
+        <h3 style="font-size:1.25rem; color:var(--or-clar); margin-bottom:0.5rem;">[Títol de la fita]</h3>
+        <p style="color:rgba(249,240,220,0.6);">[Descripció]</p>
+      </div>
+
+      <div class="reveal" style="margin-bottom:3rem; position:relative;">
+        <div style="position:absolute; left:-2.4rem; top:0.2rem; width:12px; height:12px; border-radius:50%; background:var(--foc); border:2px solid var(--nit);"></div>
+        <span class="section-label">[Any]</span>
+        <h3 style="font-size:1.25rem; color:var(--or-clar); margin-bottom:0.5rem;">[Títol de la fita]</h3>
+        <p style="color:rgba(249,240,220,0.6);">[Descripció]</p>
+      </div>
+
+      <div class="reveal" style="position:relative;">
+        <div style="position:absolute; left:-2.4rem; top:0.2rem; width:14px; height:14px; border-radius:50%; background:linear-gradient(135deg,var(--foc),var(--or)); border:2px solid var(--nit); box-shadow:0 0 12px rgba(245,183,0,0.6);"></div>
+        <span class="section-label">Avui</span>
+        <h3 style="font-size:1.25rem; color:var(--or-clar); margin-bottom:0.5rem;">El present</h3>
+        <p style="color:rgba(249,240,220,0.6);">[Descripció de la situació actual de la falla: secció, nombre de fallers, assoliments recents.]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ============================================================
+     4. COMISSIÓ
+     ============================================================ -->
+<section id="comissio" aria-labelledby="comissio-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Les nostres persones</span>
+      <h2 class="section-title" id="comissio-title">La Comissió</h2>
+      <p class="section-desc">Membres que fan possible la falla any rere any.</p>
+    </div>
+
+    <!-- Grups / categories de membres -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:1.5rem;">
+
+      <!-- Grup: Junta Directiva -->
+      <div class="reveal exercici-card" data-delay="0">
+        <div class="card-label">Junta Directiva</div>
+        <h3 class="card-title">[President/a]</h3>
+        <p>[Nom i cognoms del president/a]</p>
+        <!-- INSERIR: Llista de càrrecs de la junta directiva -->
+        <ul style="margin-top:1rem; display:flex; flex-direction:column; gap:0.4rem;">
+          <li style="color:rgba(249,240,220,0.5); font-size:0.9rem;">Vicepresident/a: <span style="color:var(--crema);">[Nom]</span></li>
+          <li style="color:rgba(249,240,220,0.5); font-size:0.9rem;">Secretari/a: <span style="color:var(--crema);">[Nom]</span></li>
+          <li style="color:rgba(249,240,220,0.5); font-size:0.9rem;">Tresorer/a: <span style="color:var(--crema);">[Nom]</span></li>
+        </ul>
+      </div>
+
+      <!-- Grup: Vocals -->
+      <div class="reveal exercici-card" data-delay="90">
+        <div class="card-label">Vocals</div>
+        <h3 class="card-title">Equip de gestió</h3>
+        <!-- INSERIR: Llista de vocals i les seues responsabilitats -->
+        <ul style="margin-top:1rem; display:flex; flex-direction:column; gap:0.4rem;">
+          <li style="color:rgba(249,240,220,0.5); font-size:0.9rem;">Vocal de Festes: <span style="color:var(--crema);">[Nom]</span></li>
+          <li style="color:rgba(249,240,220,0.5); font-size:0.9rem;">Vocal de Comunicació: <span style="color:var(--crema);">[Nom]</span></li>
+          <li style="color:rgba(249,240,220,0.5); font-size:0.9rem;">Vocal de Cultura: <span style="color:var(--crema);">[Nom]</span></li>
+        </ul>
+      </div>
+
+      <!-- Nous fallers/es -->
+      <div class="reveal exercici-card" data-delay="180">
+        <div class="card-label">Nous Membres</div>
+        <h3 class="card-title">Nous fallers/es</h3>
+        <p>Benvinguts/des als nous membres de la comissió aquest exercici.</p>
+        <!-- INSERIR: Llista de nous fallers/es -->
+        <ul style="margin-top:1rem; display:flex; flex-direction:column; gap:0.4rem;">
+          <li style="color:rgba(249,240,220,0.5); font-size:0.9rem;">· [Nom del nou faller/a]</li>
+          <li style="color:rgba(249,240,220,0.5); font-size:0.9rem;">· [Nom del nou faller/a]</li>
+          <li style="color:rgba(249,240,220,0.5); font-size:0.9rem;">· [Nom del nou faller/a]</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-2 reveal">
+      <a href="comissio.html" class="btn btn-outline">Veure tots els membres</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ============================================================
+     5. EXERCICI ACTUAL
+     ============================================================ -->
+<section id="exercici" class="exercici" aria-labelledby="exercici-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Exercici [ANY]–[ANY]</span>
+      <h2 class="section-title" id="exercici-title">L'Any en Curs</h2>
+    </div>
+
+    <div class="exercici-grid">
+
+      <!-- Falleres Majors -->
+      <div class="exercici-card reveal" data-delay="0">
+        <div class="card-label">Fallera Major</div>
+        <div class="fallera-major-display">
+          <div class="fallera-photo" aria-label="Foto de la Fallera Major">👑</div>
+          <div>
+            <h3 class="card-title">[Nom Fallera Major]</h3>
+            <p><!-- INSERIR: Breu presentació de la Fallera Major --></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fallera Major Infantil -->
+      <div class="exercici-card reveal" data-delay="90">
+        <div class="card-label">Fallera Major Infantil</div>
+        <div class="fallera-major-display">
+          <div class="fallera-photo" aria-label="Foto de la Fallera Major Infantil">👸</div>
+          <div>
+            <h3 class="card-title">[Nom Fallera Major Infantil]</h3>
+            <p><!-- INSERIR: Breu presentació de la Fallera Major Infantil --></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- President -->
+      <div class="exercici-card reveal" data-delay="120">
+        <div class="card-label">President</div>
+        <h3 class="card-title">[Nom del President]</h3>
+        <p><!-- INSERIR: Missatge del president o breu presentació --></p>
+      </div>
+
+      <!-- Representants -->
+      <div class="exercici-card reveal" data-delay="150">
+        <div class="card-label">Representants</div>
+        <h3 class="card-title">Cort d'Honor</h3>
+        <!-- INSERIR: Llista de representants -->
+        <ul style="margin-top:0.75rem; display:flex; flex-direction:column; gap:0.35rem;">
+          <li style="color:rgba(249,240,220,0.55); font-size:0.92rem;">· [Nom representant]</li>
+          <li style="color:rgba(249,240,220,0.55); font-size:0.92rem;">· [Nom representant]</li>
+          <li style="color:rgba(249,240,220,0.55); font-size:0.92rem;">· [Nom representant]</li>
+        </ul>
+      </div>
+
+      <!-- Esbossos i Llibret -->
+      <div class="exercici-card full reveal" data-delay="180">
+        <div style="display:grid; grid-template-columns:1fr 1fr 1fr; gap:2rem;">
+          <!-- Esbossos -->
+          <div>
+            <div class="card-label">Esbossos (Bocetos)</div>
+            <h3 class="card-title" style="font-size:1.1rem;">Falla Gran i Infantil</h3>
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.75rem; margin-top:1rem;">
+              <div style="aspect-ratio:3/4; background:linear-gradient(160deg,var(--cendra),var(--fum)); border:1px solid rgba(245,183,0,0.15); border-radius:3px; display:flex; align-items:center; justify-content:center; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:rgba(245,183,0,0.3);">Falla Gran</div>
+              <div style="aspect-ratio:3/4; background:linear-gradient(160deg,var(--cendra),var(--fum)); border:1px solid rgba(245,183,0,0.15); border-radius:3px; display:flex; align-items:center; justify-content:center; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; color:rgba(245,183,0,0.3);">Falla Infantil</div>
+            </div>
+          </div>
+
+          <!-- Artista -->
+          <div>
+            <div class="card-label">Artista Faller</div>
+            <h3 class="card-title" style="font-size:1.1rem;">[Nom de l'artista]</h3>
+            <p style="font-size:0.9rem;"><!-- INSERIR: Informació sobre l'artista faller contractat --></p>
+            <p style="margin-top:0.75rem; font-size:0.88rem; color:rgba(249,240,220,0.45);">Lema: <em style="color:var(--or-clar);">"[Lema de la falla]"</em></p>
+          </div>
+
+          <!-- Llibret + Entrevistes -->
+          <div>
+            <div class="card-label">Documents i entrevistes</div>
+            <h3 class="card-title" style="font-size:1.1rem;">Publicacions</h3>
+            <div style="display:flex; flex-direction:column; gap:0.75rem; margin-top:1rem;">
+              <a href="llibret.html" class="btn btn-outline" style="font-size:0.75rem; padding:0.65rem 1.25rem;">
+                📖 Descarregar Llibret
+              </a>
+              <a href="entrevistes.html" class="btn btn-ghost" style="font-size:0.75rem; padding:0.65rem 1.25rem;">
+                🎙️ Entrevistes
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ============================================================
+     6. NOTÍCIES
+     ============================================================ -->
+<section id="novetats" class="novetats" aria-labelledby="novetats-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Actualitat</span>
+      <h2 class="section-title" id="novetats-title">Notícies</h2>
+    </div>
+
+    <div class="news-grid">
+
+      <!-- INSERIR: Repetir aquest bloc per cada notícia -->
+      <article class="news-card reveal" data-delay="0">
+        <div class="news-card-img">
+          <div class="img-placeholder" aria-label="Imatge de la notícia">🔥</div>
+          <!-- INSERIR: <img src="img/noticia-1.jpg" alt="[Descripció de la imatge]"> -->
+        </div>
+        <div class="news-card-body">
+          <p class="news-card-date">[DD Month AAAA]</p>
+          <h3 class="news-card-title">[Títol de la notícia]</h3>
+          <p class="news-card-excerpt">[Resum breu de la notícia. Dos o tres frases que anticipen el contingut.]</p>
+          <a href="noticies.html" class="news-card-link">Llegir més →</a>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-delay="90">
+        <div class="news-card-img">
+          <div class="img-placeholder" aria-label="Imatge de la notícia">📸</div>
+        </div>
+        <div class="news-card-body">
+          <p class="news-card-date">[DD Month AAAA]</p>
+          <h3 class="news-card-title">[Títol de la notícia]</h3>
+          <p class="news-card-excerpt">[Resum breu de la notícia.]</p>
+          <a href="noticies.html" class="news-card-link">Llegir més →</a>
+        </div>
+      </article>
+
+      <article class="news-card reveal" data-delay="180">
+        <div class="news-card-img">
+          <div class="img-placeholder" aria-label="Imatge de la notícia">🎉</div>
+        </div>
+        <div class="news-card-body">
+          <p class="news-card-date">[DD Month AAAA]</p>
+          <h3 class="news-card-title">[Títol de la notícia]</h3>
+          <p class="news-card-excerpt">[Resum breu de la notícia.]</p>
+          <a href="noticies.html" class="news-card-link">Llegir més →</a>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="mt-3 text-center reveal">
+      <a href="noticies.html" class="btn btn-outline">Totes les notícies</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ============================================================
+     7. CALENDARI
+     ============================================================ -->
+<section id="calendari" class="calendari" aria-labelledby="calendari-title">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr auto; align-items:start; gap:2rem; margin-bottom:3rem;">
+      <div class="section-header reveal" style="margin-bottom:0;">
+        <span class="section-label">Agenda de l'any</span>
+        <h2 class="section-title" id="calendari-title">Calendari d'Actes</h2>
+      </div>
+      <a href="calendari.html" class="btn btn-ghost reveal" style="white-space:nowrap; align-self:flex-end;">Calendari complet</a>
+    </div>
+
+    <!-- INSERIR: Repetir cada .event-item amb les dades reals de l'acte -->
+    <div class="events-list reveal">
+
+      <div class="event-item">
+        <div class="event-date">
+          <div class="day">[DD]</div>
+          <div class="month">[Mes]</div>
+        </div>
+        <div class="event-info">
+          <div class="event-name">[Nom de l'acte]</div>
+          <div class="event-place">📍 [Lloc de l'acte]</div>
+        </div>
+        <span class="event-tag tag-tradicional">Tradicional</span>
+      </div>
+
+      <div class="event-item">
+        <div class="event-date">
+          <div class="day">[DD]</div>
+          <div class="month">[Mes]</div>
+        </div>
+        <div class="event-info">
+          <div class="event-name">[Nom de l'acte]</div>
+          <div class="event-place">📍 [Lloc de l'acte]</div>
+        </div>
+        <span class="event-tag tag-cultural">Cultural</span>
+      </div>
+
+      <div class="event-item">
+        <div class="event-date">
+          <div class="day">[DD]</div>
+          <div class="month">[Mes]</div>
+        </div>
+        <div class="event-info">
+          <div class="event-name">[Nom de l'acte]</div>
+          <div class="event-place">📍 [Lloc de l'acte]</div>
+        </div>
+        <span class="event-tag tag-social">Social</span>
+      </div>
+
+      <div class="event-item">
+        <div class="event-date">
+          <div class="day">19</div>
+          <div class="month">Mar</div>
+        </div>
+        <div class="event-info">
+          <div class="event-name">Cremà</div>
+          <div class="event-place">📍 Carrer de la Falla</div>
+        </div>
+        <span class="event-tag tag-tradicional">Tradicional</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ============================================================
+     8. MULTIMÈDIA — GALERIA
+     ============================================================ -->
+<section id="galeria" class="galeria" aria-labelledby="galeria-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Imatges i vídeos</span>
+      <h2 class="section-title" id="galeria-title">Multimèdia</h2>
+    </div>
+
+    <!-- Galeria masonry de fotos placeholder -->
+    <div class="gallery-masonry reveal">
+      <!-- INSERIR: Substituir cada .gallery-item amb imatges reals -->
+      <div class="gallery-item" role="button" tabindex="0" aria-label="Plantà [Any]">
+        <div class="item-inner">🔥</div>
+        <div class="item-overlay"><span class="item-label">Plantà [Any]</span></div>
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="Ofrena [Any]">
+        <div class="item-inner">🌺</div>
+        <div class="item-overlay"><span class="item-label">Ofrena [Any]</span></div>
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="Cremà [Any]">
+        <div class="item-inner">💥</div>
+        <div class="item-overlay"><span class="item-label">Cremà [Any]</span></div>
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="Mascletà [Any]">
+        <div class="item-inner">🎆</div>
+        <div class="item-overlay"><span class="item-label">Mascletà [Any]</span></div>
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="Sopar de Germanor">
+        <div class="item-inner">🍽️</div>
+        <div class="item-overlay"><span class="item-label">Sopar de Germanor</span></div>
+      </div>
+      <div class="gallery-item" role="button" tabindex="0" aria-label="Actes culturals">
+        <div class="item-inner">🎭</div>
+        <div class="item-overlay"><span class="item-label">Actes culturals</span></div>
+      </div>
+    </div>
+
+    <!-- Vídeos i Himne -->
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-top:1.5rem;">
+      <div class="exercici-card reveal" data-delay="0">
+        <div class="card-label">Vídeos</div>
+        <h3 class="card-title" style="font-size:1.1rem;">Plantà · Cremà · Actes</h3>
+        <p style="font-size:0.9rem;"><!-- INSERIR: Embeds de vídeos de YouTube o Vimeo --></p>
+        <div style="margin-top:1rem; aspect-ratio:16/9; background:var(--nit); border:1px solid rgba(245,183,0,0.1); border-radius:3px; display:flex; align-items:center; justify-content:center; color:rgba(245,183,0,0.2); font-size:2rem;">▶️</div>
+      </div>
+      <div class="exercici-card reveal" data-delay="90">
+        <div class="card-label">Himne de la Falla</div>
+        <h3 class="card-title" style="font-size:1.1rem;">[Títol de l'Himne]</h3>
+        <p style="font-size:0.9rem;"><!-- INSERIR: Reproductor d'àudio de l'himne oficial de la falla --></p>
+        <!-- INSERIR: <audio controls src="audio/himne.mp3"></audio> -->
+        <div style="margin-top:1rem; padding:1.5rem; background:var(--nit); border:1px solid rgba(245,183,0,0.1); border-radius:3px; text-align:center; color:rgba(245,183,0,0.25); font-size:2rem;">🎵</div>
+      </div>
+    </div>
+
+    <div class="mt-2 reveal">
+      <a href="galeria.html" class="btn btn-outline">Veure tota la galeria</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ============================================================
+     9. ARXIU
+     ============================================================ -->
+<section id="arxiu" aria-labelledby="arxiu-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Memòria i patrimoni</span>
+      <h2 class="section-title" id="arxiu-title">Arxiu Históric</h2>
+      <p class="section-desc">Tota la història de la falla organitzada per anys: llibrets, fotos, esbossos i representants.</p>
+    </div>
+
+    <!-- Anys com a grid de targetes -->
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:1rem;">
+
+      <!-- INSERIR: Repetir per cada any disponible a l'arxiu -->
+      <a href="arxiu.html#any-[AAAA]" class="reveal" data-delay="0"
+         style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:1.75rem 1rem; background:rgba(249,240,220,0.03); border:1px solid rgba(245,183,0,0.1); border-radius:4px; transition:all 0.25s; text-align:center; gap:0.5rem;"
+         onmouseover="this.style.borderColor='rgba(245,183,0,0.4)'; this.style.background='rgba(249,240,220,0.06)';"
+         onmouseout="this.style.borderColor='rgba(245,183,0,0.1)'; this.style.background='rgba(249,240,220,0.03)';">
+        <span style="font-family:var(--font-display); font-size:1.6rem; color:var(--or);">[AAAA]</span>
+        <span style="font-size:0.78rem; color:rgba(249,240,220,0.4); letter-spacing:0.08em;">Llibret · Fotos</span>
+      </a>
+
+      <a href="arxiu.html#any-[AAAA]" class="reveal" data-delay="60"
+         style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:1.75rem 1rem; background:rgba(249,240,220,0.03); border:1px solid rgba(245,183,0,0.1); border-radius:4px; transition:all 0.25s; text-align:center; gap:0.5rem;"
+         onmouseover="this.style.borderColor='rgba(245,183,0,0.4)'; this.style.background='rgba(249,240,220,0.06)';"
+         onmouseout="this.style.borderColor='rgba(245,183,0,0.1)'; this.style.background='rgba(249,240,220,0.03)';">
+        <span style="font-family:var(--font-display); font-size:1.6rem; color:var(--or);">[AAAA]</span>
+        <span style="font-size:0.78rem; color:rgba(249,240,220,0.4); letter-spacing:0.08em;">Llibret · Fotos</span>
+      </a>
+
+      <a href="arxiu.html#any-[AAAA]" class="reveal" data-delay="120"
+         style="display:flex; flex-direction:column; align-items:center; justify-content:center; padding:1.75rem 1rem; background:rgba(249,240,220,0.03); border:1px solid rgba(245,183,0,0.1); border-radius:4px; transition:all 0.25s; text-align:center; gap:0.5rem;"
+         onmouseover="this.style.borderColor='rgba(245,183,0,0.4)'; this.style.background='rgba(249,240,220,0.06)';"
+         onmouseout="this.style.borderColor='rgba(245,183,0,0.1)'; this.style.background='rgba(249,240,220,0.03)';">
+        <span style="font-family:var(--font-display); font-size:1.6rem; color:var(--or);">[AAAA]</span>
+        <span style="font-size:0.78rem; color:rgba(249,240,220,0.4); letter-spacing:0.08em;">Llibret · Fotos</span>
+      </a>
+
+    </div>
+
+    <div class="mt-3 reveal">
+      <a href="arxiu.html" class="btn btn-outline">Veure tot l'arxiu</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ============================================================
+     10. CULTURA FALLERA
+     ============================================================ -->
+<section id="cultura" style="background:var(--fum);" aria-labelledby="cultura-title">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="section-label">Tradició valenciana</span>
+      <div class="deco-rule"><span>🔥</span></div>
+      <h2 class="section-title" id="cultura-title">Cultura Fallera</h2>
+      <p class="section-desc">Coneix els actes, la indumentària i tot el que envolta la nostra festa.</p>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:1.5rem; margin-bottom:3rem;">
+
+      <!-- Actes -->
+      <div class="news-card reveal" data-delay="0">
+        <div class="news-card-body">
+          <div style="font-size:2rem; margin-bottom:1rem;">🔨</div>
+          <h3 class="news-card-title">La Plantà</h3>
+          <p class="news-card-excerpt"><!-- INSERIR: Explicació de la Plantà: quan es fa, com funciona, curiositats --></p>
+        </div>
+      </div>
+
+      <div class="news-card reveal" data-delay="80">
+        <div class="news-card-body">
+          <div style="font-size:2rem; margin-bottom:1rem;">🌸</div>
+          <h3 class="news-card-title">L'Ofrena de Flors</h3>
+          <p class="news-card-excerpt"><!-- INSERIR: Explicació de l'Ofrena a la Mare de Déu dels Desemparats --></p>
+        </div>
+      </div>
+
+      <div class="news-card reveal" data-delay="160">
+        <div class="news-card-body">
+          <div style="font-size:2rem; margin-bottom:1rem;">🔥</div>
+          <h3 class="news-card-title">La Cremà</h3>
+          <p class="news-card-excerpt"><!-- INSERIR: Explicació de la Cremà: la nit del 19, el moment culminant de les Falles --></p>
+        </div>
+      </div>
+
+      <div class="news-card reveal" data-delay="240">
+        <div class="news-card-body">
+          <div style="font-size:2rem; margin-bottom:1rem;">💣</div>
+          <h3 class="news-card-title">La Mascletà</h3>
+          <p class="news-card-excerpt"><!-- INSERIR: Explicació de la mascletà diària a la Plaça de l'Ajuntament --></p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Indumentària -->
+    <div class="exercici-card reveal">
+      <div class="card-label">Indumentària Oficial del Casal</div>
+      <h3 class="card-title">Blusó, Mocador i Vestimenta</h3>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; margin-top:1.5rem; align-items:start;">
+        <div>
+          <p style="color:rgba(249,240,220,0.65); margin-bottom:1rem;">
+            <!-- INSERIR: Descripció de la indumentària oficial: colors, disseny del blusó, mocador, etc. -->
+            [Descripció de la indumentària: colors del blusó, disseny, mocador oficial de la falla, etc.]
+          </p>
+          <!-- INSERIR: Informació de on i com comprar la indumentària -->
+          <div style="padding:1rem; background:rgba(245,183,0,0.07); border:1px solid rgba(245,183,0,0.2); border-radius:3px;">
+            <p style="font-family:var(--font-display); font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--or); margin-bottom:0.5rem;">On comprar</p>
+            <p style="font-size:0.9rem; color:rgba(249,240,220,0.6);">[Nom de la botiga o proveïdor, adreça i telèfon de contacte]</p>
+          </div>
+        </div>
+        <div style="aspect-ratio:1; background:linear-gradient(160deg,var(--cendra),var(--fum)); border:1px solid rgba(245,183,0,0.1); border-radius:3px; display:flex; align-items:center; justify-content:center; color:rgba(245,183,0,0.2); font-size:3rem;">👘</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ============================================================
+     11. PATROCINADORS
+     ============================================================ -->
+<section id="patrocinadors" class="patrocinadors" aria-labelledby="patrocinadors-title">
+  <div class="container">
+    <div class="section-header centered reveal">
+      <span class="section-label">Col·laboradors</span>
+      <h2 class="section-title" id="patrocinadors-title">Patrocinadors</h2>
+      <p class="section-desc">Empreses i entitats que fan possible la nostra falla.</p>
+    </div>
+
+    <!-- INSERIR: Substituir cada .sponsor-item amb el logo real de cada patrocinador -->
+    <div class="sponsors-grid reveal">
+      <div class="sponsor-item"><span>[Logo / Nom empresa 1]</span></div>
+      <div class="sponsor-item"><span>[Logo / Nom empresa 2]</span></div>
+      <div class="sponsor-item"><span>[Logo / Nom empresa 3]</span></div>
+      <div class="sponsor-item"><span>[Logo / Nom empresa 4]</span></div>
+      <div class="sponsor-item"><span>[Logo / Nom empresa 5]</span></div>
+      <div class="sponsor-item"><span>[Logo / Nom empresa 6]</span></div>
+      <div class="sponsor-item"><span>[Logo / Nom empresa 7]</span></div>
+      <div class="sponsor-item"><span>[Logo / Nom empresa 8]</span></div>
+    </div>
+
+    <div class="mt-3 text-center reveal">
+      <p style="color:rgba(249,240,220,0.4); font-size:0.9rem; margin-bottom:1.25rem;">Vols col·laborar amb la nostra falla?</p>
+      <a href="#contacte" class="btn btn-ghost">Contacta amb nosaltres</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+
+<!-- ============================================================
+     12. CONTACTE
+     ============================================================ -->
+<section id="contacte" class="contacte" aria-labelledby="contacte-title">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="section-label">Parla amb nosaltres</span>
+      <h2 class="section-title" id="contacte-title">Contacte</h2>
+    </div>
+
+    <div class="contact-grid">
+
+      <!-- Info de contacte -->
+      <div class="contact-info">
+
+        <div class="contact-item reveal" data-delay="0">
+          <div class="contact-icon">🏠</div>
+          <div class="contact-item-text">
+            <p class="label">Casal Faller</p>
+            <!-- INSERIR: Adreça completa del casal -->
+            <p>[Carrer, número, codi postal, València]</p>
+          </div>
+        </div>
+
+        <div class="contact-item reveal" data-delay="60">
+          <div class="contact-icon">📞</div>
+          <div class="contact-item-text">
+            <p class="label">Telèfon</p>
+            <!-- INSERIR: Número de telèfon de contacte -->
+            <p><a href="tel:[TELEFON]" style="color:var(--or);">[+34 XXX XXX XXX]</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item reveal" data-delay="120">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-item-text">
+            <p class="label">Correu Electrònic</p>
+            <!-- INSERIR: Adreça de correu oficial -->
+            <p><a href="mailto:[EMAIL]" style="color:var(--or);">[info@fallasagradafamilia.es]</a></p>
+          </div>
+        </div>
+
+        <div class="contact-item reveal" data-delay="180">
+          <div class="contact-icon">👤</div>
+          <div class="contact-item-text">
+            <p class="label">Fer-se Faller/a</p>
+            <p>Omple el formulari i ens posarem en contacte amb tu ben aviat. Tothom és benvingut!</p>
+          </div>
+        </div>
+
+        <!-- Xarxes socials -->
+        <div class="reveal" data-delay="210">
+          <p class="label" style="font-family:var(--font-display); font-size:0.72rem; letter-spacing:0.15em; text-transform:uppercase; color:var(--or); margin-bottom:0.75rem;">Xarxes Socials</p>
+          <div class="social-links">
+            <!-- INSERIR: URLs reals de les xarxes socials -->
+            <a href="#" class="social-link">📘 Facebook</a>
+            <a href="#" class="social-link">📷 Instagram</a>
+            <a href="#" class="social-link">🐦 Twitter/X</a>
+            <a href="#" class="social-link">▶️ YouTube</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Formulari de contacte -->
+      <form class="contact-form reveal" data-delay="100" novalidate>
+        <div class="form-group">
+          <label for="nom">Nom i cognoms *</label>
+          <input type="text" id="nom" name="nom" placeholder="[El teu nom]" required />
+        </div>
+
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+          <div class="form-group">
+            <label for="email">Correu electrònic *</label>
+            <input type="email" id="email" name="email" placeholder="[correu@exemple.com]" required />
+          </div>
+          <div class="form-group">
+            <label for="telefon">Telèfon</label>
+            <input type="tel" id="telefon" name="telefon" placeholder="[+34 XXX XXX XXX]" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="motiu">Motiu del contacte</label>
+          <select id="motiu" name="motiu">
+            <option value="">— Selecciona una opció —</option>
+            <option value="fer-se-faller">Vull fer-me faller/a</option>
+            <option value="patrocini">Informació sobre patrocini</option>
+            <option value="premsa">Premsa i mitjans de comunicació</option>
+            <option value="indumentaria">Indumentària oficial</option>
+            <option value="altre">Altre</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="missatge">Missatge *</label>
+          <textarea id="missatge" name="missatge" placeholder="[Escriu aquí el teu missatge...]" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+          Enviar Missatge
+        </button>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-grid">
+
+      <div class="footer-brand">
+        <div class="nav-brand">
+          <div class="brand-icon" aria-hidden="true"></div>
+          <div>
+            <div class="brand-name">Sagrada Família</div>
+            <div class="brand-sub">Comissió Fallera · València</div>
+          </div>
+        </div>
+        <!-- INSERIR: Lema o descripció breu de la falla -->
+        <p class="brand-tagline">[Lema de la falla o descripció breu de la comissió i el seu esperit.]</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>La Falla</h4>
+        <ul>
+          <li><a href="#la-falla">Qui som</a></li>
+          <li><a href="#historia">Història</a></li>
+          <li><a href="#comissio">La Comissió</a></li>
+          <li><a href="#cultura">Cultura Fallera</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Exercici</h4>
+        <ul>
+          <li><a href="#exercici">Any en curs</a></li>
+          <li><a href="llibret.html">Llibret</a></li>
+          <li><a href="entrevistes.html">Entrevistes</a></li>
+          <li><a href="#arxiu">Arxiu</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Comunitat</h4>
+        <ul>
+          <li><a href="#novetats">Notícies</a></li>
+          <li><a href="#calendari">Calendari</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#patrocinadors">Patrocinadors</a></li>
+          <li><a href="#contacte">Contacte</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <!-- INSERIR: Any real de fundació -->
+      <p>© <span id="year"></span> Falla Sagrada Família · Tots els drets reservats</p>
+      <span class="footer-badge">València · Patrimoni Immaterial de la Humanitat</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="main.js"></script>
+</body>
+</html>
